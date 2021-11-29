@@ -1,0 +1,638 @@
+*{
+	padding :0;
+	margin :0;	
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+body{
+	width: 100%;
+	min-width: 1050px;
+	font: 12px Helvetica,Arial,sans-serif;
+}
+/*顶部样式区域*/
+.header{
+	width: 100%;
+	height: 150px;
+	/*border: 1px solid red;*/
+}
+/*顶部导航*/
+.header .top{
+	width: 100%;
+	line-height: 28px;
+	background-color: #555;
+	position: relative;
+}
+.header .top .top-nav{
+	line-height: 24px;
+	margin-left: 12px;
+	display: inline-block;
+}
+/*导航项样式*/
+.header .top .top-item{
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 19px;
+}
+.header .top .top-item a{
+	color: #ddd;
+}
+.header .top .top-item a:hover{
+	color: #fff;
+}
+.header .top .top-right{
+	position: absolute;
+	top: 1px;
+	right: 5px;
+}
+.header .bot{
+	width: 100%;
+	height: 115px;
+	margin: 0 auto;
+	background-color: #f0f3ef;
+}
+/*logo 搜索*/
+.header .bot .bot-search{
+	height:75px;
+	width: 100%;
+	line-height: 70px;
+	overflow: hidden;
+	border-bottom: 1px solid #e5ebe4;
+}
+.header .bot .bot-search .search-content,
+.header .bot .bot-nav{
+	width: 1050px;
+	margin: 0 auto;
+}
+/*logo样式*/
+.header .bot .bot-search .search-content .logo{
+	float: left;
+	width: 145px;
+	height: 56px;
+	padding: 9px 5px;
+	vertical-align: middle;
+	background:url('../images/lg_music_a12_2.png') no-repeat 0 22px;
+    
+}
+.header .bot .bot-search .search-content .logo a{
+	display: block;
+	padding-top: 70px;
+}
+/*搜索区域样式*/
+.header .bot .bot-search .search-content .input .text{
+    width: 480px;
+    height: 32px;
+    border-radius: 3px 0px 0px 3px;
+    box-shadow: 0px 1px 1px #ddd;
+    outline: none;
+    border:none;
+    text-indent: 10px;
+}
+.header .bot .bot-search .search-content .input .input-btn{
+    height: 36px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: -6px;
+    margin-top: 4px;
+}
+.header .bot .bot-search .search-content .input .btn{
+	float: left;
+	line-height: 39px;
+	width: 38px;
+    outline: none;
+    border:none;
+    color: transparent;
+    border-radius: 0px 3px 3px 0px;
+    background: url('../images/nav_btn.png') no-repeat 0px -40px;
+}
+.header .bot .bot-nav .nav-list .nav-item{
+	line-height: 40px;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 22px;
+}
+.header .bot .bot-nav .nav-list .nav-item a{
+	color: #555d53;
+}
+.header .bot .bot-nav .nav-list .nav-item a:hover{
+	background-color: #555;
+	color: #fff;
+}
+.main{
+	width:1050px;
+	height: 2600px;
+	margin: 40px auto;
+	position: relative;
+}
+.main .article{
+	width:680px;
+}
+.main .article #slides{
+    width:100%;
+    height: 250px;
+}
+/*编辑推荐*/
+.main .article .recommend{
+	width: 100%;
+}
+.main .article .recommend .title{
+	margin-top: 40px;
+	font-size: 17px;
+	line-height: 20px;
+	color: #000;
+	padding-bottom: 5px;
+    border-bottom: 2px solid #02A682
+}
+.main .article .recommend .btn{
+	float: right;
+	margin-right: 5px;
+}
+.main .article .recommend .btn .tab-prev,
+.main .article .recommend .btn .tab-next{
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	background-color: #02A682;
+	display: inline-block;
+	cursor: pointer;
+}
+.main .article .recommend .btn .tab-prev::after,
+.main .article .recommend .btn .tab-next::after{
+	content: '';
+    display: inline-block;
+    border: 4px solid transparent;
+    transform: rotateZ(135deg);
+    box-shadow: -1px -1px 1px #fff;
+    margin-left: 3px;
+	margin-bottom: 1px;
+}
+.main .article .recommend .btn .btn-hide:hover{
+	opacity:0.8;
+}
+.main .article .recommend .btn .btn-show{
+	opacity:0.4;
+}
+.main .article .recommend .btn .tab-prev::after{
+	transform: rotateZ(-45deg);
+	margin-left: 8px;
+}
+.main .article .recommend .recommedBox{
+	width: 100%;
+	height: 402px;
+	color: #666;
+	background-color: #F5F7F8;
+	overflow: hidden;
+	position: relative;
+}
+.main .article .recommend .recommedBox .box-list{
+	width: 1290px;
+	padding: 15px 0px 15px 33px;
+	/* border: 1px solid #999; */
+	font-size:0;
+	position: absolute;
+}
+.main .article .recommend .recommedBox  .box-list-item{
+	width:150px;
+	height: 350px;
+	border: 1px solid #eee;
+	padding: 10px 15px;
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 33px;
+	vertical-align: text-top;
+}
+.main .article .recommend .recommedBox  .box-list-item .item-mask{
+	display: none;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #424242;
+	font-size: 16px;
+	opacity: 0.8;
+}
+.main .article .recommend .recommedBox  .box-list-item .item-mask > .hoverlay{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.main .article .recommend .recommedBox  .box-list-item .item-mask > .hoverlay > p{
+	line-height: 26px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 15px;
+}
+.main .article .recommend .recommedBox .box-list-item .playBut {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    bottom: 8px;
+	right: 8px;
+}
+.main .article .recommend .recommedBox .box-list-item .playBut::before{
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 8px solid #fff;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -5px;
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img{
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 150px;
+	height:150px;
+	position: relative;
+	cursor: pointer;
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img01{
+	background-image: url('../images/8030377-1.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img02{
+	background-image: url('../images/c64843.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img03{
+	background-image: url('../images/c64540.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img04{
+	background-image: url('../images/c65244.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img05{
+	background-image: url('../images/c65112.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img06{
+	background-image: url('../images/c64910.jpg');
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img:hover .item-mask{
+	display: block;
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img:hover .playBut{
+	background-color: #fff;
+	z-index: 10;
+}
+.main .article .recommend .recommedBox .box-list-item .box-item-img:hover .playBut::before{
+	border-left: 8px solid #000;
+}
+.main .article .recommend .recommedBox  .box-list-item .referee{
+	margin-top: 10px;
+	margin-bottom:10px;
+	font-size: 13px;
+}
+.main .article .recommend .recommedBox  .box-list-item .username{
+	font-size: 15px;
+	line-height: 15px;
+    color: #138A64;
+}
+.main .article .recommend .recommedBox  .box-list-item .username:hover{
+	color: #FFF;
+    background-color: #138A64;
+}
+.main .article .recommend .recommedBox  .box-list-item .text03{
+	margin-bottom:15px;
+	font-size: 13px;
+}
+.main .article .recommend .recommedBox  .box-list-item .describe{
+	font-size:13px;
+}
+/*左侧边栏*/
+.aside{
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 300px;
+}
+
+.aside .ad01{
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 250px;
+	cursor: pointer;
+	background:url('https://oimagec6.ydstatic.com/image?id=9138653510192008916&product=adpublish&w=300&h=250&sc=0&rm=0');
+}
+.aside .ad01 .text,
+.aside .ad02 .text{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 30px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	cursor: text;
+	background-color: rgba(0,0,0,0.3);
+}
+.aside .census{
+	width: 100%;
+	font-size: 0;
+	margin-top:20px;
+}
+.aside .census .box{
+	width:98px;
+	height: 60px;
+	margin-right: 2px;
+	font-size: 15px;
+	display: inline-block;
+	background-color: #F5F7F8;
+	text-align: center;
+	color: #666;
+}
+.aside .census .box > a {
+	display: inline-block;
+	margin-top:10px;
+	margin-bottom: 3px;
+	color: #138A64;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.aside .census .box > a:hover{
+	color: #fff;
+	background-color: #138A64;
+}
+.aside .census .button{
+	width:100%;
+	display: block;
+	font-size: 20px;
+	line-height: 40px;
+	margin-top:3px;
+	text-align: center;
+	color: #fff;
+	background-color: #139D72;
+	box-shadow: 0 0px 1px rgb(48, 80, 70);
+	border-radius: 3px;
+}
+.aside .census .button:hover{
+	opacity: 0.8;
+}
+.aside .classify,
+.aside .music250{
+	width: 100%;
+	margin-top: 30px;
+	font-size: 15px;
+}
+.aside .music250 .music250-title > a,
+.aside .classify .classify-title > a{
+	float: right;
+	color: #999;
+	font-size: 13px;
+}
+.aside .music250 .music250-title > a:hover,
+.aside .classify .classify-title > a:hover{
+	background-color: #999;
+	color: #fff;
+}
+.aside .classify .table{
+	width: 100%;
+	box-sizing:border-box;
+	margin-top: 6px;
+	font-size: 0;
+}
+.aside .classify .table .table-cell{
+	font-size: 15px;
+	box-sizing:border-box;
+	width:150px;
+	line-height: 36px;
+	display: inline-block;
+	border-top: 1px solid #F8F6F6;
+	border-right: 1px solid #F8F6F6;
+	border-bottom: 1px solid #F8F6F6;
+	text-indent: 7px;
+	color:#138A64;
+	margin-top: -1px;
+	cursor: pointer;
+}
+.aside .classify .table .table-cell:hover{
+	background-color:#F5F7F8;
+}
+.aside .music250-title{
+	border-bottom: 1px solid #E4E2E2;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	color: #424242;
+}
+.aside .music250 .music250-list{
+	width: 100%;
+	font-size: 0;
+}
+.aside .music250 .music250-list .list-item{
+	width: 80px;
+	margin-left: 15px;
+	margin-right: 5px;
+	display: inline-block;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	font-size: 13px;
+	color: #138A64;
+	text-align: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.aside .music250 .music250-list .list-item .text:hover{
+	color: #fff;
+	background-color: #138A64;
+}
+.aside .music250 .music250-list .list-item .item-img{
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 5px;
+	display:block;
+	cursor: pointer;
+}
+.aside .music250 .music250-list .list-item-01 .item-img{
+	background-image: url('../images/s2783063.jpg');
+}
+.aside .music250 .music250-list .list-item-02 .item-img{
+	background-image: url('../images/s4194004.jpg');
+}
+.aside .music250 .music250-list .list-item-03 .item-img{
+	background-image: url('../images/s1967258.jpg');
+}
+.aside .music250 .music250-list .list-item-04 .item-img{
+	background-image: url('../images/s8903729.jpg');
+}
+.aside .music250 .music250-list .list-item-05 .item-img{
+	background-image: url('../images/s2821080.jpg');
+}
+.aside .music250 .music250-list .list-item-06 .item-img{
+	background-image: url('../images/s1876827.jpg');
+}
+.aside .music250 .music250-list .list-item-07 .item-img{
+	background-image: url('../images/s3104656.jpg');
+}
+.aside .music250 .music250-list .list-item-08 .item-img{
+	background-image: url('../images/s3113075.jpg');
+}
+.aside .music250 .music250-list .list-item-09 .item-img{
+	background-image: url('../images/s7018733.jpg');
+}
+.aside .client{
+	width: 100%;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	margin-top: 30px;
+	height: 70px;
+	cursor: pointer;
+}
+.aside .client .app-icon{
+	background: url("../images/app_icons_50_8.jpg") no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position:-250px 0;
+    display: inline-block;
+    margin: 10px 13px 10px 10px;
+    float: left;
+}
+.aside .client .text01{
+	font-size: 16px;
+	font-weight: bolder;
+	display: block;
+	color: #204d92;
+	padding-top: 15px;
+}
+.aside .client .text02{
+	font-size: 13px;
+}
+.aside .client:after{
+	content: '';
+	display:inline-block;
+	border: 4px solid transparent;
+	transform: rotateZ(135deg);
+	box-shadow: -1px -1px 2px #ccc;
+	float: right;
+	margin-right: 10px;
+}
+.aside .outBox{
+	width:100%;
+	border: 2px solid #f1f1f1;
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	box-sizing:border-box;
+	text-align: center;
+}
+.aside .outBox .box-img{
+	background: url('../images/artist_wx_qrcode.jpg') top center no-repeat;
+	background-size:cover;
+	width: 200px;
+	height:200px;
+	margin:10px auto;
+}
+.aside .outBox .text01{
+	font-size: 16px;
+    font-weight: bold;
+}
+.aside .outBox .text02{
+	font-size: 14px;
+	color: #4e4e4e;
+}
+.aside .contact{
+	width: 100%;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.aside .contact-title{
+	border-bottom: 1px solid #E4E2E2;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	color: #424242;
+}
+.aside .contact-title > a{
+	margin-left: 5px;
+	font-size: 13px;
+	color: #666;
+}
+.aside .contact-title > a:hover{
+	background-color:#666;
+	color: #fff;
+}
+.aside .contact .musician > div,
+.aside .contact .fm > div{
+	display: inline-block;
+	width: 70px;
+	font-size: 13px;
+	text-align: center;
+}
+.aside .contact .musician .img,
+.aside .contact .fm .img{	
+	width: 40px;
+	height:40px;
+	background-size: cover;
+	display:block;
+	margin: 5px 15px;
+	border-radius: 7px;
+}
+.aside .contact .musician .img01{
+	background-image:url('../images/app_icons_50_8.jpg');
+	background-position-x: -40px;
+}
+.aside .contact .fm .img01{
+	background-image:url('../images/app_icons_50_8.jpg');
+	background-position-x: -200px;
+}
+.aside .contact .musician .img02,
+.aside .contact .fm .img02{
+	background-image:url('../images/home_weibo.png');
+}
+.aside .contact .musician .img03,
+.aside .contact .fm .img03{
+	background-image:url('../images/home_weixin.png');
+}
+.aside .contact .musician .text,
+.aside .contact .fm .text{
+	color: #138A64;
+	font-size: 13px;
+    line-height: 12px;
+}
+.aside .contact .musician .text:hover,
+.aside .contact .fm .text:hover{
+	color: #FFF;
+    background-color: #138A64;
+}
+.aside .ad02{
+	background: url('../images/718dea213a2e091.jpg') no-repeat;
+	background-size: cover;
+	margin-top: 30px;
+	cursor: pointer;
+	width: 300px;
+	height: 250px;
+	position: relative;
+}
+.footer{
+	width: 1050px;
+	line-height: 34px;
+	margin: 0 auto;
+	border-top: 1px dashed #ddd;
+	color: #999;
+	font-size: 13px;
+}
+.footer .foot-link{
+	float: right;
+}
+.footer .foot-link > a {
+	color: #37a;
+	margin-right: 10px;
+}
+.footer span > a:hover{
+	color: #fff;
+    background: #37a;
+}

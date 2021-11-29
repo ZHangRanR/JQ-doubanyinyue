@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣音乐</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./slides/slides.css">
+	<link rel="stylesheet" href="./tab-plugin/tab.css">
+	<link rel="stylesheet" href="./css/call-plugin.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<ul class="top-nav">
+				<li class="top-item">
+					<a href="#1">豆瓣</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">读书</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">电影</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">音乐</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">同城</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">小组</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">阅读</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">FM</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">时间</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">市集</a>
+				</li>
+				<li class="top-item">
+					<a href="#1">更多</a>
+				</li>
+			</ul>
+			<ul class="top-right">
+				<li class='top-item'>
+					<a href="#1">下载豆瓣客户端</a>
+				</li>
+				<li class='top-item'>
+					<a href="#1">登录</a>
+				</li>
+				<li class='top-item'>
+					<a href="#1">注册</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bot">
+			<div class="bot-search">
+				<div class='search-content'>
+					<div class="logo">
+						<a href="#1">豆瓣音乐</a>
+					</div>
+					<div class="input">
+						<input type="text" class='text' placeholder = '唱片名、表演者、条码、ISRC'>
+						<div class="input-btn">
+							<input type="submit" value='搜索' class='btn'>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="bot-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#1">音乐人</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">潮潮豆瓣音乐周</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">金羊毛计划</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">专题</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">排行榜</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">分类浏览</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">乐评</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">豆瓣FM</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">歌单</a>
+					</li>
+					<li class="nav-item">
+						<a href="#1">阿比鹿音乐奖</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="article">
+			<!-- 轮播图 -->
+			<div class="wrap" id='slides'></div>
+			<!-- 本周流行音乐/上升最快音乐人  -->
+			<div class="tab-plugin" id='tab-plugin-musician'></div>
+			<!-- 编辑推荐 -->
+			<div class="recommend">
+				<div class="title">
+					<span class="caption">编辑推荐</span>
+					<div class="btn">
+						<span class="tab-prev btn-show"></span>
+						<span class="tab-next btn-hide"></span>
+					</div>
+				</div>
+				<div class="recommedBox">
+					<div class="box-list">
+						<div class="box-list-item">
+							<div class="cover">
+								<div class="box-item-img box-item-img01">
+									<div class="playBut"></div>
+									<a class="item-mask">
+										<div class="hoverlay">
+											<p>圣马</p>
+											<p>告密者</p>
+											<p>压路机与小提琴</p>
+											<p>少年岛</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<p class='referee'>【音乐人】</p>
+							<a href="#1" class="username">甜糖</a>
+							<p class="text03">85人关注</p>
+							<p class="describe">江苏的器乐演奏二人组。吉他、鼓与采样编程，旁观矛盾的线索，试探平衡的规律。</p>
+						</div>
+						<div class="box-list-item">
+								<div class="cover">
+									<div class="box-item-img box-item-img02">
+										<div class="playBut"></div>
+										<a class="item-mask">
+											<div class="hoverlay">
+												<p>01 赤岸</p>
+												<p>02 保护好王大坑水库</p>
+												<p>03 送大黄</p>
+												<p>04 肖老师在隔壁喝酒</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<p class='referee'>【专辑】</p>
+								<a href="#1" class="username">义乌情</a>
+								<p class="text03">鴨聽天</p>
+								<p class="describe">如果说义乌的隔壁酒吧是东南中国演出场地里最奇异的存在，那么鸭听天就是这个隐秘漩涡里黯淡的中心。一句话点评：小商品市场里的前卫摇滚。</p>
+						</div>
+						<div class="box-list-item">
+								<div class="cover">
+									<div class="box-item-img box-item-img03">
+										<div class="playBut"></div>
+										<a class="item-mask">
+											<div class="hoverlay">
+												<p>Shan-kuei</p>
+												<p>Soon the sun is all</p>
+												<p>Equus</p>
+												<p>The perception song</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<p class='referee'>【专辑】</p>
+								<a href="#1" class="username">Smoke a Haiku Cigarette</a>
+								<p class="text03">Dolphy Kick Bebop</p>
+								<p class="describe">千呼万唤，海豚踢终于出版了他们的第一张专辑。一张深邃又多元的诚意之作。坐标杭州，放眼迷幻摇滚历史大格局。限量磁带200张。</p>
+						</div>
+						<div class="box-list-item">
+								<div class="cover">
+									<div class="box-item-img box-item-img04">
+										<div class="playBut"></div>
+										<a class="item-mask">
+											<div class="hoverlay">
+												<p>不想和你再見</p>
+												<p>別於以往的</p>
+												<p>faith</p>
+												<p>備忘錄</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<p class='referee'>【音乐人】</p>
+								<a href="#1" class="username">夏寧杉</a>
+								<p class="text03">74人关注</p>
+								<p class="describe">同样是一把木吉他，台湾的独立唱作人总是和大陆民谣歌手来的截然不同。来听听夏宁杉，经典的台湾味道。</p>
+						</div>
+						<div class="box-list-item">
+								<div class="cover">
+									<div class="box-item-img box-item-img05">
+										<div class="playBut"></div>
+										<a class="item-mask">
+											<div class="hoverlay">
+												<p>Intro</p>
+												<p>义</p>
+												<p>乌</p>
+												<p>隔</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<p class='referee'>【专辑】</p>
+								<a href="#1" class="username">隔壁现场</a>
+								<p class="text03">粗糙影像RoughImage</p>
+								<p class="describe">长春 Krautrock 三人组粗糙影像，一个字：正。这里是前不久在义乌隔壁酒吧的现场录音。</p>
+						</div>
+						<div class="box-list-item">
+								<div class="cover">
+									<div class="box-item-img box-item-img06">
+										<div class="playBut"></div>
+										<a class="item-mask">
+											<div class="hoverlay">
+												<p>Love Supreme</p>
+												<p>Sleepless Night (Demo)</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<p class='referee'>【音乐人】</p>
+								<a href="#1" class="username">號外 HOWHY</a>
+								<p class="text03">391人关注</p>
+								<p class="describe">广场舞funk，石库门disco，老干部活动中心的灵魂乐。老上海爵士乐的平行宇宙后裔，就是他了。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 新碟榜 -->
+			<div class="tab-plugin" id='tab-plugin-list'></div>
+			<!-- 近期热门歌单 -->
+			<div class="tab-plugin" id='tab-plugin-sheet'></div>
+		</div>
+		
+		<div class="aside">
+			<div class="ad01">
+				<div class='text'>广告</div>
+			</div>
+			<div class="census">
+				<div class="census-musican box">
+					 <a href="#1">44475</a>
+					 <div>音乐人</div>
+				</div>
+				<div class="census-podcast box">
+					<a href="#1">2656</a>
+					 <div>播客</div>
+				</div>
+				<div class="census-brand box">
+					<a href="#1">1109</a>
+					 <div>厂牌</div>
+				</div>
+				<a href="#1" class="button">我要加入</a>
+			</div>
+			<div class="classify">
+				<div class="classify-title">
+					<span>热门音乐人分类</span>
+					<a href="#1" clas="more">更多</a>
+				</div>
+				<div class="table">
+					<span class="table-cell">流行</span>
+					<span class="table-cell">轻音乐</span>
+					<span class="table-cell">摇滚</span>
+					<span class="table-cell">古典</span>
+					<span class="table-cell">电子</span>
+					<span class="table-cell">世界音乐</span>
+					<span class="table-cell">民谣</span>
+					<span class="table-cell">说唱</span>
+					<span class="table-cell">爵士</span>
+					<span class="table-cell">原声</span>
+				</div>
+			</div>	
+			<div class="tab-plugin" id="tab-plugin-weekList"></div>
+			<!-- 豆瓣音乐250 -->
+			<div class="music250">
+				<div class="music250-title">
+					<span>豆瓣音乐250</span>
+					<a href="#1" clas="more">更多</a>
+				</div>
+				<div class="music250-list">
+					<div class="list-item list-item-01">
+						<span class="item-img"></span>
+						<span class="text">A Plea En Vendredi</span>
+					</div>
+					<div class="list-item list-item-02">
+						<span class="item-img"></span>
+						<span class="text">The Boat That Rocked</span>
+					</div>
+					<div class="list-item list-item-03">
+						<span class="item-img"></span>
+						<span class="text">陈绮贞精选</span>
+					</div>
+					<div class="list-item list-item-04">
+						<span class="item-img"></span>
+						<span class="text">唐朝</span>
+					</div>
+					<div class="list-item list-item-05">
+						<span class="item-img"></span>
+						<span class="text">Once (Soundtrack)</span>
+					</div>
+					<div class="list-item list-item-06">
+						<span class="item-img"></span>
+						<span class="text">亲亲</span>
+					</div>
+					<div class="list-item list-item-07">
+						<span class="item-img"></span>
+						<span class="text">Prisoner of Love</span>
+					</div>
+					<div class="list-item list-item-08">
+						<span class="item-img"></span>
+						<span class="text">神秘嘉宾</span>
+					</div>
+					<div class="list-item list-item-09">
+						<span class="item-img"></span>
+						<span class="text">第二人生 明日版</span>
+					</div>
+				</div>
+			</div>
+			<!-- 客户端下载 -->
+			<div class="client">
+				<div class="app-icon"></div>
+				<span class="text01">豆瓣FM客户端</span>
+				<span class="text02">让好音乐继续</span>
+			</div>
+			<!-- 豆瓣音乐人小程序 -->
+			<div class="outBox">
+				<div class="box-img"></div>
+				<p class="text01">豆瓣音乐人小程序</p>
+				<p class="text02">发现当下最酷的独立音乐</p>
+			</div>
+			<!-- 联系我们 -->
+			<div class="contact">
+				<div class="contact-title">
+					<span>联系我们</span>
+					<a href="#1" clas="mail">artists@douban.com</a>
+				</div>
+				<div class="musician">
+					<div>
+						<a href="#1" class="img img01"></a>
+						<a href="#1" class="text">音乐人小站</a>
+					</div>
+					<div>
+						<a href="#1" class=" img img02"></a>
+						<a href="#1" class="text">音乐人微博</a>
+					</div>
+					<div>
+						<a href="#1" class="img img03"></a>
+						<a href="#1" class="text">音乐人微信</a>
+					</div>
+				</div>
+				<div class="fm">
+					<div>
+						<a href="#1" class="img img01"></a>
+						<a href="#1" class="text">FM小站</a>
+					</div>
+					<div>
+						<a href="#1" class="img img02"></a>
+						<a href="#1" class="text">FM微博</a>
+					</div>
+					<div>
+						<a href="#1" class="img img03"></a>
+						<a href="#1" class="text">FM微信</a>
+					</div>
+				</div>
+			</div>
+			<div class="ad02">
+				<div class='text'>广告</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span class="copyRight">&copy;2005－2018 douban.com, all rights reserved 北京豆网科技有限公司</span>
+		<span class="foot-link">
+			<a href="#1">关于豆瓣</a>
+			<a href="#1">在豆瓣工作</a>
+			<a href="#1">联系我们</a>
+			<a href="#1">免责声明</a>
+			<a href="#1">帮助中心</a>
+			<a href="#1">手机音乐</a>
+			<a href="#1">豆瓣广告</a>
+		</span>
+	</div>
+
+
+	<!-- 调用轮播图插件 -->
+	<script src='./slides/slides.js'></script>
+	<script src='./tab-plugin/tab.js'></script>
+	<script src='./js/call-plugin.js'></script>
+	<script src='./js/index.js'></script>
+</body>
+</html>
